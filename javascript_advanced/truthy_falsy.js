@@ -37,7 +37,7 @@ let person = null;
 printName(person); // person의 값이 없음 출력
 
 // 위 코드를 truthy와 falsy를 활용해서 줄여보면
-function printName(person1) {
+function printName1(person1) {
   if (!person1) {
     console.log("person의 값이 없음");
     return;
@@ -46,4 +46,4 @@ function printName(person1) {
 }
 
 let person1 = { name: "도서" }; // let person; || person = null; 일 경우 -> person의 값이 없음 출력
-printName(person1);
+printName1(person1);
