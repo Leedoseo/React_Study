@@ -34,7 +34,7 @@ function printName(person) {
 }
 
 let person = null;
-printName(person); // undefined 출력
+printName(person); // person의 값이 없음 출력
 
 // 위 코드를 truthy와 falsy를 활용해서 줄여보면
 function printName(person1) {
