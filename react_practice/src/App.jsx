@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       <Header />
-      <hi>안녕 리액트!</hi>
       <Main />
       <Footer />
     </>
