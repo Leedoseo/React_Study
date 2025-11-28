@@ -4,11 +4,11 @@ let num2 = 1.5;
 let num3 = -20;
 
 // 사칙연산 가능
-// console.log(num1 + num2);
-// console.log(num1 - num2);
-// console.log(num1 * num2);
-// console.log(num1 / num2);
-// console.log(num1 % num2); // 모듈러 연산
+console.log(num1 + num2);
+console.log(num1 - num2);
+console.log(num1 * num2);
+console.log(num1 / num2);
+console.log(num1 % num2); // 모듈러 연산
 
 let inf = Infinity;
 let mInf = -Infinity;
