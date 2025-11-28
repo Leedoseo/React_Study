@@ -9,7 +9,7 @@ if (num >= 10) {
   console.log("num은 3 이상입니다.");
 } else {
   console.log("해당 사항이 없습니다");
-} // if로 시작해서 else로 끝나거나 if문 자체로 끝나야 함
+} // if문은 if로 시작해서 else로 끝나거나 if문 자체로 끝나야 함
 
 // 2. switch문
 // -> if문과 기능은 동일

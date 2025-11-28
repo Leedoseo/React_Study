@@ -9,6 +9,15 @@ for (let idx = 0; idx < 10; idx++) {
   //   }
 
   //   if(idx >= 5) { 조건식이 완료가 되지 않더라도 중간에 멈추고싶으면 이렇게 사용
-  //     break
+  //     break;
   //   }
+}
+
+// 1부터 100까지 출력하는 코드
+for (let idx1 = 0; idx1 < 101; idx1++) {
+  console.log(idx1);
+
+  if (idx1 >= 100) {
+    break;
+  }
 }
