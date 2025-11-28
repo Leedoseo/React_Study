@@ -1,5 +1,4 @@
 // 1. 함수 선언
-
 function greeting() {
   console.log("안녕하세요");
 }
@@ -18,6 +17,7 @@ function getArea(width, height) {
   let area = width * height;
 
   return area; // 여기서 코드가 끝나게 되므로 아래에 코드를 작성해도 실행되지 않음
+  // console.log("끝났음") -> 실행 안됨
 }
 // getArea(20, 20); () 안에 있는 것들을 인수라고 부름
 
