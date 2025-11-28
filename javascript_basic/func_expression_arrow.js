@@ -19,4 +19,16 @@ let varC = () => {
   return 1;
 };
 
-console.log(varC());
+console.log(varC()); // 1
+
+let varD = (value) => {
+  console.log(value);
+  return value + 1;
+};
+console.log(varD(10));
+
+// 값을 바로 반환한다라는 가정하에
+// let varC = () => 1; 이렇게 줄이는 것도 가능
+
+let varE = (value) => value + 1;
+console.log(varE(10)); // 11
