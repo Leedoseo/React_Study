@@ -31,7 +31,6 @@ console.log(returnFalse1() || returnTrue1()); // False 함수, True 함수, 10 �
 console.log(returnTrue1() || returnFalse1()); // True 함수, 10 출력
 
 // 단락 평가 활용 사례
-
 function printName(person) {
   if (!person) {
     console.log("person의 값이 없음");
@@ -40,6 +39,7 @@ function printName(person) {
   console.log(person.name);
 }
 
+// 위 함수를 단락평가로 줄인 것이 아래 코드
 function printName(person) {
   const name = person && person.name;
   console.log(name || "person의 값이 없음");
