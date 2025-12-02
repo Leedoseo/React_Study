@@ -1,3 +1,19 @@
+// Truthy & Falsy 란?
+// - 참이나 거짓을 의미하지 않는 값도, 조건문 내에서 참이나 거짓으로 평가하는 특징
+
+// 예시
+// if (123) {
+//   console.log("123 is true"); <- 이게 출력
+// } else {
+//   console.log("123 is false");
+// }
+
+// if (undefined) {
+//   console.log("undefined is true");
+// } else {
+//   console.log("undefined is false"); <- 이게 출력
+// }
+
 // 1. Falsy한 값
 let f1 = undefined;
 let f2 = null;
@@ -8,8 +24,8 @@ let f6 = "";
 let f7 = 0n;
 
 if (!f1) {
-  console.log("falsy"); // falsy
-}
+  console.log("falsy"); // falsy 출력
+} // 출력을 보기위해 !을 붙인 것.
 
 // 2. Truthy한 값
 // -> 7가지 Falsy한 값을 제외한 나머지 모든 값
@@ -24,7 +40,6 @@ if (t5) {
 }
 
 // 3. 활용 사례
-
 function printName(person) {
   if (person === undefined || person === null) {
     console.log("person의 값이 없음");
@@ -35,6 +50,7 @@ function printName(person) {
 
 let person = null;
 printName(person); // person의 값이 없음 출력
+
 
 // 위 코드를 truthy와 falsy를 활용해서 줄여보면
 function printName1(person1) {
