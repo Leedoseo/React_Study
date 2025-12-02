@@ -70,6 +70,7 @@ const animal = {
   color: "black",
 };
 
+// animal = { a: 1 }; 이건 안됨
 animal.age = 2; // 추가 가능
 animal.name = "초롱이"; // 수정 가능
 delete animal.color; // 삭제 가능
