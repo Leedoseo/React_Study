@@ -1,9 +1,9 @@
-// 1. 콜백함수 -> 자신이 아닌 다른 함수에, 인수로써 전달된 함수를 의미 함
+// 1. 콜백함수 -> 자신이 아닌 다른 함수에, 인수로써 전달된 함수를 의미
 
-function main(value) {
+function main(value) { // 여기의 value가 사실상 sub인 셈
   console.log(1);
   console.log(2);
-  value();
+  value(); // this is sub 출력
   console.log("end");
 }
 
@@ -13,6 +13,21 @@ function sub() {
 
 main(sub); // 출력값 : sub -> 여기에서의 (sub)가 콜백 함수임
 // 콜백이라는 뜻은 뒷전에 실행되는 or 나중에 실행되는 뜻임
+
+// 이렇게도 사용 가능 (함수 표현식)
+// main(function sub() {
+//   console.log("this is sub");
+// });
+
+// 익명함수
+// main(function () {
+//   console.log("this is sub");
+// });
+
+// 화살표 함수
+// main(() => {
+//   console.log("this is sub");
+// });
 
 // 2. 콜백함수의 활용
 function repeat(count) {

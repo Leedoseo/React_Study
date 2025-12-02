@@ -14,10 +14,12 @@ let person = {
 };
 // 3. 객체 프로퍼티를 다루는 방법
 // 3.1 특정 프로퍼티에 접근 (점 표기법, 괄호 표기법)
-let name = person.name; // 존재하지 않는 프로퍼티에 접근하려고 하면 undefined가 출력
+let name = person.name;
+// let name2 = person.name2 -> 존재하지 않는 프로퍼티에 접근하려고 하면 undefined가 출력
 console.log(name); // 도서
 
-let age = person["age"]; // ""로 문자열로 작성해야함, 존재하지 않는 프로퍼티에 접근하려고하면 undefined가 출력
+let age = person["age"];
+// let age = person["age1"] -> ""로 문자열로 작성해야함, 존재하지 않는 프로퍼티에 접근하려고하면 undefined가 출력
 console.log(age); // 27
 
 let property = "hobby";
