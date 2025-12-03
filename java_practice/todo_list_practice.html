@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todolist 연습</title>
+    <link rel="stylesheet" href="todo_list_practice.css" />
+  </head>
+  <body>
+    <h1>📋 할 일 목록</h1>
+
+    <!-- 입력 영역 -->
+    <div class="input-area">
+      <input type="text" id="todoInput" placeholder="할 일을 입력하세요" />
+      <button id="addBtn">추가</button>
+    </div>
+
+    <!-- 필터 버튼 -->
+    <div id="filter">
+      <button class="active" data-filter="all">전체</button>
+      <button data-filter="active">진행중</button>
+      <button data-filter="completed">완료</button>
+    </div>
+
+    <!-- 할 일 목록 -->
+    <ul id="todoList"></ul>
+
+    <!-- 통계 -->
+    <div id="stats"></div>
+
+    <script src="todo_list_pracitice.js"></script>
+  </body>
+</html>
